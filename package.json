@@ -1,0 +1,19 @@
+{
+  "name": "worldcup-fan-agent",
+  "version": "1.0.0",
+  "description": "AI-powered World Cup 2026 Fan Trip Planner Agent using Gemini + MongoDB",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "seed": "npm --prefix server run seed",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "mongodb": "^7.2.0"
+  }
+}
